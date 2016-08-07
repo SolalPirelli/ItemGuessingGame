@@ -1,0 +1,9 @@
+﻿{
+  "Options": {
+    "StatisticsRankingLength": 10
+  },
+
+  "ConnectionStrings": {
+    "sqlite": "Data Source=db.sqlite"
+  }
+}

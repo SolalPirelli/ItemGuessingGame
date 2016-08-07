@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>EPFL or Pokémon?</title>
+    <link rel="icon" href="~/favicon.png" />
+    <link rel="stylesheet" href="~/css/bootstrap.min.css" />
+
+    <style>
+        body {
+            padding-top: 50px;
+            padding-bottom: 20px;
+        }
+
+        * {
+            text-align: center !important;
+        }
+
+        /* From http://www.minimit.com/articles/solutions-tutorials/bootstrap-3-responsive-centered-columns */
+        .col-centered {
+            display: inline-block;
+            float: none;
+            margin-right: -4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        @RenderBody()
+
+        <footer class="m-t-3">
+            <p>&copy; 2016 - <a class="text-muted" href="https://github.com/SolalPirelli" target="_blank">Solal Pirelli</a></p>
+        </footer>
+    </div>
+</body>
+</html>

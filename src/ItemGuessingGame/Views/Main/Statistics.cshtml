@@ -1,0 +1,59 @@
+﻿@model GlobalStatistics
+
+<div>
+    <h1>Statistics</h1>
+
+    <p class="text-muted">
+        @Model.TotalCorrectGuesses correct guesses out of @(Model.TotalGuesses)
+    </p>
+</div>
+
+<div class="row">
+    <div class="col-md-6 m-t-2">
+        <h3>Most correctly guessed</h3>
+
+        <table class="table">
+            <thead>
+                <tr class="table-success">
+                    <th>Name</th>
+                    <th>%</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach( var stat in Model.MostCorrectlyGuessed )
+                {
+                    <tr>
+                        <td>@stat.ItemName</td>
+                        <td>@stat.CorrectGuessPercentage</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <div class="col-md-6 m-t-2">
+        <h3>Least correctly guessed</h3>
+
+        <table class="table">
+            <thead>
+                <tr class="table-danger">
+                    <th>Name</th>
+                    <th>%</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach( var stat in Model.LeastCorrectlyGuessed )
+                {
+                    <tr>
+                        <td>@stat.ItemName</td>
+                        <td>@stat.CorrectGuessPercentage</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="m-t-3">
+    <a asp-controller="Main" asp-action="Index">Home</a>
+</div>

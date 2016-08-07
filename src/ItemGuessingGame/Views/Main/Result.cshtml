@@ -1,0 +1,43 @@
+﻿@model GuessResult
+
+<div class="card card-inverse @(Model.IsCorrect ? "card-success" : "card-danger")">
+    <div class="card-block">
+        <h1 class="card-title">
+            @Model.Item.Name is @Model.Item.Kind.Noun!
+        </h1>
+        <h5 class="card-subtitle">
+            @Model.Statistics.CorrectGuessPercentage% of correct guesses for this item.
+        </h5>
+
+        @if( Model.Item.PictureUrl != null )
+        {
+            <img class="m-t-2"
+                 style="width: 100%; max-width: 20rem; margin: auto;"
+                 src="@Model.Item.PictureUrl.Value" />
+        }
+
+        @if( Model.Item.Description != null )
+        {
+            <blockquote class="card-blockquote m-t-2">
+                @Html.Raw( Model.Item.Description.Value )
+            </blockquote>
+        }
+
+        @if( Model.Item.PictureUrl != null || Model.Item.Description != null )
+        {
+            <footer class="text-muted m-t-2">
+                @if( Model.Item.PictureUrl != null )
+                {
+                    <p>Image from <a class="card-link" href="@Model.Item.PictureUrl.SourceUrl" target="_blank">@Model.Item.PictureUrl.SourceName</a></p>
+                }
+
+                @if( Model.Item.Description != null )
+                {
+                    <p>Description from <a class="card-link" href="@Model.Item.Description.SourceUrl" target="_blank">@Model.Item.Description.SourceName</a></p>
+                }
+            </footer>
+        }
+
+        <a class="btn btn-secondary m-t-3" asp-controller="Main" asp-action="Index">Try again</a>
+    </div>
+</div>

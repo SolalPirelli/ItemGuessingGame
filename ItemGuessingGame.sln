@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{159D77D3-3F00-4D14-AB58-202F6377CFCA}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ItemGuessingGame", "src\ItemGuessingGame\ItemGuessingGame.xproj", "{4BA6B453-DD9F-4D86-862C-6E5E945B6D69}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ItemGuessingGame.ImportScripts.Pokemon", "src\ItemGuessingGame.ImportScripts.Pokemon\ItemGuessingGame.ImportScripts.Pokemon.xproj", "{2F844AB9-682E-48B7-B1A3-B42A894DA21F}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ItemGuessingGame.ImportScripts.Ldap", "src\ItemGuessingGame.ImportScripts.Ldap\ItemGuessingGame.ImportScripts.Ldap.xproj", "{8EB6A6B5-61B2-42F3-9265-9C2D314912CF}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ItemGuessingGame.ImportScripts.ItemTransform", "src\ItemGuessingGame.ImportScripts.ItemTransform\ItemGuessingGame.ImportScripts.ItemTransform.xproj", "{0E942338-FC19-4919-901F-D302FA128738}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4BA6B453-DD9F-4D86-862C-6E5E945B6D69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BA6B453-DD9F-4D86-862C-6E5E945B6D69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BA6B453-DD9F-4D86-862C-6E5E945B6D69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BA6B453-DD9F-4D86-862C-6E5E945B6D69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F844AB9-682E-48B7-B1A3-B42A894DA21F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F844AB9-682E-48B7-B1A3-B42A894DA21F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F844AB9-682E-48B7-B1A3-B42A894DA21F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F844AB9-682E-48B7-B1A3-B42A894DA21F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EB6A6B5-61B2-42F3-9265-9C2D314912CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EB6A6B5-61B2-42F3-9265-9C2D314912CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EB6A6B5-61B2-42F3-9265-9C2D314912CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EB6A6B5-61B2-42F3-9265-9C2D314912CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E942338-FC19-4919-901F-D302FA128738}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E942338-FC19-4919-901F-D302FA128738}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E942338-FC19-4919-901F-D302FA128738}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E942338-FC19-4919-901F-D302FA128738}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4BA6B453-DD9F-4D86-862C-6E5E945B6D69} = {159D77D3-3F00-4D14-AB58-202F6377CFCA}
+		{2F844AB9-682E-48B7-B1A3-B42A894DA21F} = {159D77D3-3F00-4D14-AB58-202F6377CFCA}
+		{8EB6A6B5-61B2-42F3-9265-9C2D314912CF} = {159D77D3-3F00-4D14-AB58-202F6377CFCA}
+		{0E942338-FC19-4919-901F-D302FA128738} = {159D77D3-3F00-4D14-AB58-202F6377CFCA}
+	EndGlobalSection
+EndGlobal

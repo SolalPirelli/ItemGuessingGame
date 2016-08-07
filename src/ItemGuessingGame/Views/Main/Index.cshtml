@@ -1,0 +1,34 @@
+﻿@model GuessData
+
+<div>
+    <p>Is it a person from EPFL, or a Pokémon?</p>
+
+    <h1 class="display-3">@Model.Name</h1>
+</div>
+
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <form asp-controller="Main" asp-action="Guess">
+            <div class="container m-t-2">
+                <div class="row">
+                    @foreach( var kind in Model.PossibleKinds )
+                    {
+                        <button class="col-md-6 col-centered btn btn-secondary btn-lg"
+                                type="submit"
+                                name="guessId"
+                                value="@kind.Id">
+                            @kind.Name
+                        </button>
+                    }
+                </div>
+            </div>
+
+            <!-- What, did you think you could get the solution by looking at the source code? :) -->
+            <input type="hidden" name="itemName" value="@Model.Name" />
+        </form>
+    </div>
+</div>
+
+<div class="m-t-3">
+    <a asp-controller="Main" asp-action="Statistics">View statistics</a>
+</div>
